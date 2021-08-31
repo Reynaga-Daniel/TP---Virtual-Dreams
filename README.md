@@ -113,7 +113,7 @@ Cuerpo: es el contenido de información del documento, organizado como un árbol
 >
 >`</nota>`
 
-La primera línea es la opcional especifica la versión XML que se utiliza y el tipo de codificación utilizada.
+La primera línea es la opcional, especifica la versión XML que se utiliza y el tipo de codificación utilizada.
 
 9)	Explicar brevemente el estándar SOAP
 
@@ -152,7 +152,7 @@ Content-Type es la propiedad de header usada para indicar el  media type (en-US)
 
 # Ejercicio 3
 
-Se instalo POSTMAN para obtener e enviar informacion a la base de datos.
+Se instalo POSTMAN para obtener y enviar informacion a la base de datos.
 
 3.1 Con el metodo GET se obtuvo la informacion de la base de datos firebase
 ![Img](https://github.com/Reynaga-Daniel/TP---Virtual-Dreams/blob/master/Ejercicio%203/3_1.jpg?raw=true "Img")
@@ -160,7 +160,7 @@ Se instalo POSTMAN para obtener e enviar informacion a la base de datos.
 3.2 Con el metodo POST se envio la informacion a la base de datos firebase
 ![Img2](https://github.com/Reynaga-Daniel/TP---Virtual-Dreams/blob/master/Ejercicio%203/3_2.jpg?raw=true "Img2")
 
-3.3 Con el metodo GET se obtuvo la informacion actizalida con los datos cargos en el punto anterior
+3.3 Con el metodo GET se obtuvo la informacion actualizada con los datos cargos en el punto anterior
 ![img3](https://github.com/Reynaga-Daniel/TP---Virtual-Dreams/blob/master/Ejercicio%203/3_3.jpg?raw=true "img3")
 # Ejercicio 4
 
@@ -177,8 +177,10 @@ para ejecutar el script, escribir en la terminal
 
 [Repositorio ejercicio 5](https://github.com/Reynaga-Daniel/TP---Virtual-Dreams/tree/master/Ejercicio%205 "Repociturio ejercicio 5")
 
-Se instalaron los package request y  express, ejecutando lo siguiente en la terminal
+Se instalaron los package request, cors y  express, ejecutando lo siguiente en la terminal
 >npm install request
+>
+>npm install cors
 >
 >npm install express
 
@@ -186,4 +188,7 @@ para ejecutar el script, escribir en la terminal
 >node index.js
 
 # Ejercicio 6
+
+ejecutar los pasos del ejercicio 5 para iniciar el servidor y luego abrir crearPersonas.html
+
 [repositorio ejercicio 6](https://github.com/Reynaga-Daniel/TP---Virtual-Dreams/tree/master/Ejercicio%206 "repositorio ejercicio 6")
