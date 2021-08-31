@@ -6,27 +6,31 @@
   <title>Etiquetas de texto</title>
   <script>
     function enviarDatos() {
-      var request = require('request');
 
       var nombre = document.getElementById("nombre").value;
-      var apellido = document.getElementById("nombre").value;
-      var dni = parseInt(document.getElementById("nombre").value);
+      var apellido = document.getElementById("apellido").value;
+      var dni = parseInt(document.getElementById("dni").value);
 
 
-      var obj = {
+      var data = {
         nombre: nombre,
         apellido: apellido,
         dni: dni
       };
 
-      var dataString = JSON.stringify(obj);
+      var url = 'http://localhost:3000/test';
 
 
-      var options = {
-        url: 'https://reclutamiento-14cf7.firebaseio.com/personas.json',
+      fetch(url, {
         method: 'POST',
-        body: dataString
-      };    
+        body: JSON.stringify(data),
+        headers: {
+          'Content-Type': 'application/json'
+        },
+      }).then(res => {
+        console.log("ok");
+      })
+        
 
     }
   </script>
@@ -42,7 +46,7 @@
     <label for="apellido">Apellido:</label>
     <input type="text" id="apellido" name="apellido"><br><br>
     <label for="dni">Dni:</label>
-    <input type="number" id="dni" name="dni"><br><br>
+    <input type="text" id="dni" name="dni"><br><br>
     <input type="submit" value="Enviar" onclick="enviarDatos()">
   </form>
 

@@ -1,7 +1,9 @@
 const request = require('request');
 const express = require('express');
+var cors = require('cors');
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 
 app.post('/test', (req, res) => {
@@ -20,9 +22,7 @@ app.post('/test', (req, res) => {
             message: "Formate invalido2, Ingrese nuevamente"
         })
     }
-
-
-    Object.keys(req.body).length
+    
 
     if (!req.body.nombre || !req.body.apellido) {
         return res.status(400).json({
